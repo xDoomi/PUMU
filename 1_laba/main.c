@@ -26,9 +26,9 @@ void EXTI0_IRQHandler(void)
 	}
 }
 
-int main(void) //////////////////4вариант//////////////////
+int main(void) //////////////////4РІР°СЂРёР°РЅС‚//////////////////
 {
-	//////////////////Светодиоды//////////////////
+	//////////////////РЎРІРµС‚РѕРґРёРѕРґС‹//////////////////
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 	GPIO_InitTypeDef GPIO_InitStruct;
 	GPIO_StructInit(&GPIO_InitStruct);
@@ -39,7 +39,7 @@ int main(void) //////////////////4вариант//////////////////
 	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-	//////////////////Кнопка//////////////////
+	//////////////////KРЅРѕРїРєР°//////////////////
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
 	GPIO_InitTypeDef GPIOA_InitStruct;
 	GPIO_StructInit(&GPIOA_InitStruct);
